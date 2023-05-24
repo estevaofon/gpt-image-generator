@@ -9,10 +9,7 @@ Finally, the code checks if the script is being run directly or imported as a mo
 ## Requirements
 
 The following Python libraries are required:
-
-- os
 - openai
-- sys
 - dotenv
 
 
