@@ -1,23 +1,33 @@
-## About
+## :space_invader: About
 
-This code uses the OpenAI API to create a new image based on a provided text prompt. It begins by importing required modules, including the OpenAI API and dotenv library for loading environment variables.
+This code imports necessary libraries and sets up an API key for OpenAI. There is a function called "create_image" that takes in a description, sends it to OpenAI, and returns the URL of the generated image. The main function takes a user input description and calls the "create_image" function with the input as a parameter and prints the resulting URL.
 
-Next, the code loads the OpenAI API key from an environment variable using load_dotenv(). Then it creates a function that takes a text description as input and generates an image corresponding to it using the OpenAI Image.create() method.
-
-Finally, the code checks if the script is being run directly or imported as a module, and if it is being run directly, it takes a text description as a command line argument and prints the generated image URL.
-
-## Requirements
+## :wrench: Requirements
 
 The following Python libraries are required:
+
+- os
 - openai
+- sys
 - dotenv
 
 
-## Usage
+## :rocket: OpenAI API
 
-python filename.py "Write a description of the image you want to generate"
+This application uses the OpenAI API. You will need to obtain an API key from the [OpenAI website](https://openai.com/), and add it to your environment variables or a .env file in the project root with the key `OPENAI_API_KEY`.
 
-## Contribuition
+## :shipit: Environment Variables
+
+This application uses the following environment variables, which need to be added to a .env file in the project root:
+
+- OPENAI_API_KEY
+
+
+## :runner:  Usage
+
+python <filename>.py "Description of the image you want to create"
+
+## :raising_hand: Contribution
 
 All contributions are welcome! Please open an issue or submit a pull request.
 
