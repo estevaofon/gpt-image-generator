@@ -1,6 +1,6 @@
 ## :space_invader: About
 
-This code imports modules such as 'os', 'openai', 'sys' and 'dotenv'. It loads sensitive authentication information into the defined environment. This code defines the `create_image()` function that takes in a `description` argument, passes the description into an OpenAI API to generate an image and returns the url of that image. Finally, when the code is executed directly, `sys.argv[1]` is used to extract the first argument passed to the script and is used as the description passed to the `create_image()` function. The resulting image url is printed to the console.
+This code is a Python script that uses the OpenAI API to generate an image based on a given text prompt. It imports necessary libraries, sets up the OpenAI API, creates a function "create_image" that takes in a string "description" as a prompt and returns an image URL. Finally, it runs the "create_image" function if the script is run directly and prints the resulting image URL. 
 
 ## :wrench: Requirements
 
@@ -25,7 +25,7 @@ This application uses the following environment variables, which need to be adde
 
 ## :runner:  Usage
 
-python3 script.py "A person walking down a street"
+python filename.py "description"
 
 ## :raising_hand: Contribution
 
